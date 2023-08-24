@@ -4,15 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev --watch=./src/**/* ./src/index.ts",
+    "dev": "ts-node-dev --watch=./src/**/*.ts ./src/index.ts",
+    "build": "npx tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/multer": "^1.4.7",
     "express": "^4.18.2",
     "joi": "^17.9.2",
+    "mime-types": "^2.1.35",
+    "multer": "^1.4.5-lts.1",
+    "node-cron": "^3.0.2",
     "sqlite3": "^5.1.6",
     "ts-node-dev": "^2.0.0"
   },
